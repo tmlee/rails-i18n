@@ -1,0 +1,229 @@
+# GB English translations for Ruby on Rails
+
+"ms":
+  locale:
+    native_name: Bahasa Malaysia
+    address_separator: " "
+  date:
+    formats:
+      default: "%d-%m-%Y"
+      short: "%d %b"
+      long: "%d %B, %Y"
+
+    day_names:
+      - Ahad
+      - Isnin
+      - Selasa
+      - Rabu
+      - Khamis
+      - Jumaat
+      - Sabtu
+    abbr_day_names:
+      - Ahd
+      - Isn
+      - Sel
+      - Rab
+      - Kam
+      - Jum
+      - Sab
+
+    month_names:
+      - ~
+      - Januari
+      - Februari
+      - Mac
+      - April
+      - Mei
+      - Jun
+      - Julai
+      - Ogos
+      - September
+      - Oktober
+      - November
+      - Disember
+    abbr_month_names:
+      - ~
+      - Jan
+      - Feb
+      - Mac
+      - Apr
+      - Mei
+      - Jun
+      - Jul
+      - Ogo
+      - Sep
+      - Okt
+      - Nov
+      - Dis
+    order:
+      - :day
+      - :month
+      - :year
+
+  time:
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      short: "%d %b %H:%M"
+      long: "%d %B, %Y %H:%M"
+    am: "am"
+    pm: "pm"
+
+  support:
+    array:
+      words_connector: ", "
+      two_words_connector: " dan "
+      last_word_connector: ", dan "
+
+    select:
+      prompt: "Sila pilih"
+
+  number:
+    format:
+      separator: "."
+      delimiter: ","
+      precision: 3
+      significant: false
+      strip_insignificant_zeros: false
+
+    currency:
+      format:
+        format: "%u%n"
+        unit: "MYR"
+        separator: "."
+        delimiter: ","
+        precision: 2
+        significant: false
+        strip_insignificant_zeros: false
+
+    percentage:
+      format:
+        delimiter: ""
+
+    precision:
+      format:
+        delimiter: ""
+
+    human:
+      format:
+        delimiter: ""
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+      decimal_units:
+        format: "%n %u"
+        units:
+          unit: ""
+          thousand: Ribu
+          million: Juta
+          billion: Bilion
+          trillion: Trilion
+          quadrillion: Quadrilion
+
+  datetime:
+    distance_in_words:
+      half_a_minute: "setengah minit"
+      less_than_x_seconds:
+        one:   "kurang dari 1 saat"
+        other: "kurang dari %{count} saat"
+      x_seconds:
+        one:   "1 saat"
+        other: "%{count} saat"
+      less_than_x_minutes:
+        one:   "kurang dari 1 minit"
+        other: "kurang dari %{count} minit"
+      x_minutes:
+        one:   "1 minit"
+        other: "%{count} minit"
+      about_x_hours:
+        one:   "lebih kurang 1 jam"
+        other: "lebih kurang %{count} jam"
+      x_days:
+        one:   "1 hari"
+        other: "%{count} hari"
+      about_x_months:
+        one:   "lebih kurang 1 bulan"
+        other: "lebih kurang %{count} bulan"
+      x_months:
+        one:   "1 bulan"
+        other: "%{count} bulan"
+      about_x_years:
+        one:   "lebih kurang 1 tahun"
+        other: "lebih kurang %{count} tahun"
+      over_x_years:
+        one:   "lebih 1 tahun"
+        other: "lebih %{count} tahun"
+      almost_x_years:
+        one:   "hampir 1 tahun"
+        other: "hampir %{count} tahun"
+    prompts:
+      year:   "Tahun"
+      month:  "Bulan"
+      day:    "Hari"
+      hour:   "Jam"
+      minute: "Minit"
+      second: "Saat"
+
+  helpers:
+    select:
+      prompt: "Sila pilih"
+
+    submit:
+      create: 'Buat %{model}'
+      update: 'Update %{model}'
+      submit: 'Simpan %{model}'
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages: &errors_messages
+      inclusion: "tidak dimasukkan ke dalam senarai"
+      exclusion: "is reserved"
+      invalid: "tidak sah"
+      confirmation: "tidak sepadan dengan konfirmasi"
+      accepted: "perlu diterima"
+      empty: "tidak boleh dibiarkan kosong"
+      blank: "tidak boleh dibiarkan kosong"
+      too_long:
+        one: "terlalu panjang (maksimum adalah 1 karakter)"
+        other: "terlalu panjang (maksimum adalah %{count} karakter)"
+      too_short:
+        one: "terlalu pendek (minimum adalah 1 karakter)"
+        other: "terlalu pendek (minimum adalah %{count} karakter)"
+      wrong_length:
+        one: "adalah jumlah karakter yang tidak sah (sepatutnya 1 karakter)"
+        other: "adalah jumlah karakter yang tidak sah (sepatutnya %{count} karakter)"
+      not_a_number: "bukan nombor"
+      not_an_integer: "mestilah integer"
+      greater_than: "mesti melebihi %{count}"
+      greater_than_or_equal_to: "mesti melebihi atau sama dengan %{count}"
+      equal_to: "mesti sama dengan %{count}"
+      less_than: "mesti kurang daripada %{count}"
+      less_than_or_equal_to: "mesti kurang atau sama dengan %{count}"
+      odd: "mestilah ganjil"
+      even: "mestilah genap"
+
+  activerecord:
+    errors:
+      template:
+        header:
+          one:    "1 kesilapan telah mengelakkan %{model} daripada disimpankan"
+          other:  "%{count} kesilapan mengelakkan %{model} daripada disimpankan"
+        body: "Terdapat kesilapan/masalah dengan pengisian borang:"
+
+      messages:
+        taken: "telah diambil"
+        record_invalid: "Pengesahan gagal: %{errors}"
+        <<: *errors_messages
+
+      full_messages:
+        format: "%{attribute} %{message}"
